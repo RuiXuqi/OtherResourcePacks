@@ -1,0 +1,27 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"layer": "CUTOUT",
+		"textures": [ "modularmachinery:blocks/blockcasing_plain_ctm" ],
+		"extra": {
+			"connect_to": [
+				{ "block": "gugu-utils:environmenthatch" },
+				{ "block": "gugu-utils:energyoutputport" },
+				{ "block": "gugu-utils:pressurehatch" },
+				{ "block": "gugu-utils:aspectinputhatch" },
+				{ "block": "gugu-utils:sparkmanahatch" },
+				{ "block": "gugu-utils:starlightinputhatch" },
+				{ "block": "gugu-utils:aurainputhatch" },
+				{ "block": "modularmachinery:blockcontroller" },
+				{ "block": "modularmachinery:blockcasing" },
+				{ "block": "modularmachinery:blockinputbus" },
+				{ "block": "modularmachinery:blockfluidinputhatch" },
+				{ "block": "modularmachinery:blockenergyinputhatch" },
+				{ "block": "modularmachinery:blockoutputbus" },
+				{ "block": "modularmachinery:blockfluidoutputhatch" },
+				{ "block": "modularmachinery:blockenergyoutputhatch" }
+			]
+		}
+	}
+}

@@ -1,0 +1,512 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"all": "mekanism:blocks/models/metallurgic_infuser",
+		"particle": "mekanism:blocks/steelcasing"
+	},
+	"elements": [
+		{
+			"name": "Base",
+			"from": [1, 0, 0],
+			"to": [15, 2, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3.75, 4, 2, 4.5], "texture": "#all"},
+				"east": {"uv": [5.75, 4, 3.75, 4.5], "texture": "#all"},
+				"south": {"uv": [7.5, 4, 5.75, 4.5], "texture": "#all"},
+				"west": {"uv": [2, 4, 0, 4.5], "texture": "#all"},
+				"up": {"uv": [2, 4, 3.75, 0], "texture": "#all"},
+				"down": {"uv": [3.75, 0, 5.5, 4], "texture": "#all"}
+			}
+		},
+		{
+			"name": "RightChamber",
+			"from": [1.5, 2, 2],
+			"to": [2.5, 8, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [8.375, 1.25, 8.25, 2.75], "texture": "#all"},
+				"east": {"uv": [9, 1.25, 8.375, 2.75], "texture": "#all"},
+				"south": {"uv": [9.125, 1.25, 9, 2.75], "texture": "#all"},
+				"west": {"uv": [8.25, 1.25, 7.625, 2.75], "texture": "#all"},
+				"up": {"uv": [8.25, 1.25, 8.375, 0], "texture": "#all"},
+				"down": {"uv": [8.375, 0, 8.5, 1.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "TopChamber",
+			"from": [2.5, 8, 2],
+			"to": [13.5, 9, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [12.75, 4.25, 11.375, 4.5], "texture": "#all"},
+				"east": {"uv": [13.375, 4.25, 12.75, 4.5], "texture": "#all"},
+				"south": {"uv": [14.75, 4.25, 13.375, 4.5], "texture": "#all"},
+				"west": {"uv": [11.375, 4.25, 10.75, 4.5], "texture": "#all"},
+				"up": {"uv": [11.375, 4.25, 12.75, 3], "texture": "#all"},
+				"down": {"uv": [12.75, 3, 14.125, 4.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "BackChamber",
+			"from": [2.5, 2, 7],
+			"to": [13.5, 8, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [10.75, 0.25, 9.375, 1.75], "texture": "#all"},
+				"east": {"uv": [10.875, 0.25, 10.75, 1.75], "texture": "#all"},
+				"south": {"uv": [12.25, 0.25, 10.875, 1.75], "texture": "#all"},
+				"west": {"uv": [9.375, 0.25, 9.25, 1.75], "texture": "#all"},
+				"up": {"uv": [9.375, 0.25, 10.75, 0], "texture": "#all"},
+				"down": {"uv": [10.75, 0, 12.125, 0.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "LeftChamber",
+			"from": [13.5, 2, 2],
+			"to": [14.5, 8, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [8.375, 1.25, 8.25, 2.75], "texture": "#all"},
+				"east": {"uv": [9, 1.25, 8.375, 2.75], "texture": "#all"},
+				"south": {"uv": [9.125, 1.25, 9, 2.75], "texture": "#all"},
+				"west": {"uv": [8.25, 1.25, 7.625, 2.75], "texture": "#all"},
+				"up": {"uv": [8.25, 1.25, 8.375, 0], "texture": "#all"},
+				"down": {"uv": [8.375, 0, 8.5, 1.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "FCTop",
+			"from": [2.5, 7, 1],
+			"to": [13.5, 8, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [13.875, 1.75, 12.5, 2], "texture": "#all"},
+				"east": {"uv": [14, 1.75, 13.875, 2], "texture": "#all"},
+				"south": {"uv": [15.375, 1.75, 14, 2], "texture": "#all"},
+				"west": {"uv": [12.5, 1.75, 12.375, 2], "texture": "#all"},
+				"up": {"uv": [12.5, 1.75, 13.875, 1.5], "texture": "#all"},
+				"down": {"uv": [13.875, 1.5, 15.25, 1.75], "texture": "#all"}
+			}
+		},
+		{
+			"name": "FCBottom",
+			"from": [2.5, 2, 1],
+			"to": [13.5, 3, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [13.875, 1.75, 12.5, 2], "texture": "#all"},
+				"east": {"uv": [14, 1.75, 13.875, 2], "texture": "#all"},
+				"south": {"uv": [15.375, 1.75, 14, 2], "texture": "#all"},
+				"west": {"uv": [12.5, 1.75, 12.375, 2], "texture": "#all"},
+				"up": {"uv": [12.5, 1.75, 13.875, 1.5], "texture": "#all"},
+				"down": {"uv": [13.875, 1.5, 15.25, 1.75], "texture": "#all"}
+			}
+		},
+		{
+			"name": "FCRight",
+			"from": [2.5, 3, 1],
+			"to": [3.5, 7, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [7.875, 3, 7.75, 4], "texture": "#all"},
+				"east": {"uv": [8, 3, 7.875, 4], "texture": "#all"},
+				"south": {"uv": [8.125, 3, 8, 4], "texture": "#all"},
+				"west": {"uv": [7.75, 3, 7.625, 4], "texture": "#all"},
+				"up": {"uv": [7.75, 3, 7.875, 2.75], "texture": "#all"},
+				"down": {"uv": [7.875, 2.75, 8, 3], "texture": "#all"}
+			}
+		},
+		{
+			"name": "FCLeft",
+			"from": [12.5, 3, 1],
+			"to": [13.5, 7, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [7.875, 3, 7.75, 4], "texture": "#all"},
+				"east": {"uv": [8, 3, 7.875, 4], "texture": "#all"},
+				"south": {"uv": [8.125, 3, 8, 4], "texture": "#all"},
+				"west": {"uv": [7.75, 3, 7.625, 4], "texture": "#all"},
+				"up": {"uv": [7.75, 3, 7.875, 2.75], "texture": "#all"},
+				"down": {"uv": [7.875, 2.75, 8, 3], "texture": "#all"}
+			}
+		},
+		{
+			"name": "FCDoor",
+			"from": [3.5, 3, 0.5],
+			"to": [12.5, 7, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [13.625, 0.25, 12.5, 1.25], "texture": "#all"},
+				"east": {"uv": [13.75, 0.25, 13.625, 1.25], "texture": "#all"},
+				"south": {"uv": [14.875, 0.25, 13.75, 1.25], "texture": "#all"},
+				"west": {"uv": [12.5, 0.25, 12.375, 1.25], "texture": "#all"},
+				"up": {"uv": [12.5, 0.25, 13.625, 0], "texture": "#all"},
+				"down": {"uv": [13.625, 0, 14.75, 0.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Cable1",
+			"from": [11.5, 3.5, 8],
+			"to": [12.5, 4.5, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [14.125, 6.5, 14, 6.75], "texture": "#all"},
+				"east": {"uv": [15, 6.5, 14.125, 6.75], "texture": "#all"},
+				"south": {"uv": [15.125, 6.5, 15, 6.75], "texture": "#all"},
+				"west": {"uv": [14, 6.5, 13.125, 6.75], "texture": "#all"},
+				"up": {"uv": [14, 6.5, 14.125, 4.75], "texture": "#all"},
+				"down": {"uv": [14.125, 4.75, 14.25, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Cable3",
+			"from": [3, 4, 8],
+			"to": [5, 6, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [11.875, 6.5, 11.625, 7], "texture": "#all"},
+				"east": {"uv": [12.75, 6.5, 11.875, 7], "texture": "#all"},
+				"south": {"uv": [13, 6.5, 12.75, 7], "texture": "#all"},
+				"west": {"uv": [11.625, 6.5, 10.75, 7], "texture": "#all"},
+				"up": {"uv": [11.625, 6.5, 11.875, 4.75], "texture": "#all"},
+				"down": {"uv": [11.875, 4.75, 12.125, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Cable5",
+			"from": [3.5, 3.5, 8],
+			"to": [4.5, 4.5, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [14.125, 6.5, 14, 6.75], "texture": "#all"},
+				"east": {"uv": [15, 6.5, 14.125, 6.75], "texture": "#all"},
+				"south": {"uv": [15.125, 6.5, 15, 6.75], "texture": "#all"},
+				"west": {"uv": [14, 6.5, 13.125, 6.75], "texture": "#all"},
+				"up": {"uv": [14, 6.5, 14.125, 4.75], "texture": "#all"},
+				"down": {"uv": [14.125, 4.75, 14.25, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Cable2",
+			"from": [11, 4, 8],
+			"to": [13, 6, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [11.875, 6.5, 11.625, 7], "texture": "#all"},
+				"east": {"uv": [12.75, 6.5, 11.875, 7], "texture": "#all"},
+				"south": {"uv": [13, 6.5, 12.75, 7], "texture": "#all"},
+				"west": {"uv": [11.625, 6.5, 10.75, 7], "texture": "#all"},
+				"up": {"uv": [11.625, 6.5, 11.875, 4.75], "texture": "#all"},
+				"down": {"uv": [11.875, 4.75, 12.125, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Cable4",
+			"from": [11.5, 5.5, 8],
+			"to": [12.5, 6.5, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [14.125, 6.5, 14, 6.75], "texture": "#all"},
+				"east": {"uv": [15, 6.5, 14.125, 6.75], "texture": "#all"},
+				"south": {"uv": [15.125, 6.5, 15, 6.75], "texture": "#all"},
+				"west": {"uv": [14, 6.5, 13.125, 6.75], "texture": "#all"},
+				"up": {"uv": [14, 6.5, 14.125, 4.75], "texture": "#all"},
+				"down": {"uv": [14.125, 4.75, 14.25, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Cable6",
+			"from": [3.5, 5.5, 8],
+			"to": [4.5, 6.5, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [14.125, 6.5, 14, 6.75], "texture": "#all"},
+				"east": {"uv": [15, 6.5, 14.125, 6.75], "texture": "#all"},
+				"south": {"uv": [15.125, 6.5, 15, 6.75], "texture": "#all"},
+				"west": {"uv": [14, 6.5, 13.125, 6.75], "texture": "#all"},
+				"up": {"uv": [14, 6.5, 14.125, 4.75], "texture": "#all"},
+				"down": {"uv": [14.125, 4.75, 14.25, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "TopPanelDec",
+			"from": [1.5, 11.5, 13.5],
+			"to": [14.5, 12.5, 14.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [5.875, 7.25, 4.25, 7.5], "texture": "#all"},
+				"east": {"uv": [6, 7.25, 5.875, 7.5], "texture": "#all"},
+				"south": {"uv": [7.625, 7.25, 6, 7.5], "texture": "#all"},
+				"west": {"uv": [4.25, 7.25, 4.125, 7.5], "texture": "#all"},
+				"up": {"uv": [4.25, 7.25, 5.875, 7], "texture": "#all"},
+				"down": {"uv": [5.875, 7, 7.5, 7.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "BackPlate",
+			"from": [1, 2, 14],
+			"to": [15, 14, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 5.25, 0.25, 8.25], "texture": "#all"},
+				"east": {"uv": [2.25, 5.25, 2, 8.25], "texture": "#all"},
+				"south": {"uv": [4, 5.25, 2.25, 8.25], "texture": "#all"},
+				"west": {"uv": [0.25, 5.25, 0, 8.25], "texture": "#all"},
+				"up": {"uv": [0.25, 5.25, 2, 4.75], "texture": "#all"},
+				"down": {"uv": [2, 4.75, 3.75, 5.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "TopPanel",
+			"from": [1, 12, 11],
+			"to": [15, 14, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [6.25, 5.5, 4.5, 6], "texture": "#all"},
+				"east": {"uv": [6.625, 5.5, 6.25, 6], "texture": "#all"},
+				"south": {"uv": [8.375, 5.5, 6.625, 6], "texture": "#all"},
+				"west": {"uv": [4.5, 5.5, 4.125, 6], "texture": "#all"},
+				"up": {"uv": [4.5, 5.5, 6.25, 4.75], "texture": "#all"},
+				"down": {"uv": [6.25, 4.75, 8, 5.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "TopPanelExtr",
+			"from": [1, 13, 10],
+			"to": [15, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [6, 6.5, 4.25, 6.75], "texture": "#all"},
+				"east": {"uv": [6.125, 6.5, 6, 6.75], "texture": "#all"},
+				"south": {"uv": [7.875, 6.5, 6.125, 6.75], "texture": "#all"},
+				"west": {"uv": [4.25, 6.5, 4.125, 6.75], "texture": "#all"},
+				"up": {"uv": [4.25, 6.5, 6, 6.25], "texture": "#all"},
+				"down": {"uv": [6, 6.25, 7.75, 6.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "ConnectorRight",
+			"from": [3.5, 9, 3],
+			"to": [6.5, 10, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [9.25, 5.5, 8.875, 5.75], "texture": "#all"},
+				"east": {"uv": [9.625, 5.5, 9.25, 5.75], "texture": "#all"},
+				"south": {"uv": [10, 5.5, 9.625, 5.75], "texture": "#all"},
+				"west": {"uv": [8.875, 5.5, 8.5, 5.75], "texture": "#all"},
+				"up": {"uv": [8.875, 5.5, 9.25, 4.75], "texture": "#all"},
+				"down": {"uv": [9.25, 4.75, 9.625, 5.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "ConnectorLeft",
+			"from": [9.5, 9, 3],
+			"to": [12.5, 10, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [9.25, 5.5, 8.875, 5.75], "texture": "#all"},
+				"east": {"uv": [9.625, 5.5, 9.25, 5.75], "texture": "#all"},
+				"south": {"uv": [10, 5.5, 9.625, 5.75], "texture": "#all"},
+				"west": {"uv": [8.875, 5.5, 8.5, 5.75], "texture": "#all"},
+				"up": {"uv": [8.875, 5.5, 9.25, 4.75], "texture": "#all"},
+				"down": {"uv": [9.25, 4.75, 9.625, 5.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "ConnectorWireRight",
+			"from": [4.5, 10, 4],
+			"to": [5.5, 13, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [8.75, 6.25, 8.625, 7], "texture": "#all"},
+				"east": {"uv": [8.875, 6.25, 8.75, 7], "texture": "#all"},
+				"south": {"uv": [9, 6.25, 8.875, 7], "texture": "#all"},
+				"west": {"uv": [8.625, 6.25, 8.5, 7], "texture": "#all"},
+				"up": {"uv": [8.625, 6.25, 8.75, 6], "texture": "#all"},
+				"down": {"uv": [8.75, 6, 8.875, 6.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "ConnectorWireLeft",
+			"from": [10.5, 10, 4],
+			"to": [11.5, 13, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [8.75, 6.25, 8.625, 7], "texture": "#all"},
+				"east": {"uv": [8.875, 6.25, 8.75, 7], "texture": "#all"},
+				"south": {"uv": [9, 6.25, 8.875, 7], "texture": "#all"},
+				"west": {"uv": [8.625, 6.25, 8.5, 7], "texture": "#all"},
+				"up": {"uv": [8.625, 6.25, 8.75, 6], "texture": "#all"},
+				"down": {"uv": [8.75, 6, 8.875, 6.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "ConnectorWireTop",
+			"from": [5.5, 12, 4],
+			"to": [10.5, 13, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [9.25, 7.5, 8.625, 7.75], "texture": "#all"},
+				"east": {"uv": [9.375, 7.5, 9.25, 7.75], "texture": "#all"},
+				"south": {"uv": [10, 7.5, 9.375, 7.75], "texture": "#all"},
+				"west": {"uv": [8.625, 7.5, 8.5, 7.75], "texture": "#all"},
+				"up": {"uv": [8.625, 7.5, 9.25, 7.25], "texture": "#all"},
+				"down": {"uv": [9.25, 7.25, 9.875, 7.5], "texture": "#all"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Base",
+			"origin": [7, 2, -8],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "RightChamber",
+			"origin": [-5.5, 8, -6],
+			"color": 0,
+			"children": [1]
+		},
+		{
+			"name": "TopChamber",
+			"origin": [5.5, 9, -6],
+			"color": 0,
+			"children": [2]
+		},
+		{
+			"name": "BackChamber",
+			"origin": [5.5, 8, -1],
+			"color": 0,
+			"children": [3]
+		},
+		{
+			"name": "LeftChamber",
+			"origin": [6.5, 8, -6],
+			"color": 0,
+			"children": [4]
+		},
+		{
+			"name": "FCTop",
+			"origin": [5.5, 8, -7],
+			"color": 0,
+			"children": [5]
+		},
+		{
+			"name": "FCBottom",
+			"origin": [5.5, 3, -7],
+			"color": 0,
+			"children": [6]
+		},
+		{
+			"name": "FCRight",
+			"origin": [-4.5, 7, -7],
+			"color": 0,
+			"children": [7]
+		},
+		{
+			"name": "FCLeft",
+			"origin": [5.5, 7, -7],
+			"color": 0,
+			"children": [8]
+		},
+		{
+			"name": "FCDoor",
+			"origin": [4.5, 5, -7],
+			"color": 0,
+			"children": [9]
+		},
+		{
+			"name": "Cable1",
+			"origin": [4.5, 4.5, 0],
+			"color": 0,
+			"children": [10]
+		},
+		{
+			"name": "Cable3",
+			"origin": [-3, 6, 0],
+			"color": 0,
+			"children": [11]
+		},
+		{
+			"name": "Cable5",
+			"origin": [-3.5, 4.5, 0],
+			"color": 0,
+			"children": [12]
+		},
+		{
+			"name": "Cable2",
+			"origin": [5, 6, 0],
+			"color": 0,
+			"children": [13]
+		},
+		{
+			"name": "Cable4",
+			"origin": [4.5, 6.5, 0],
+			"color": 0,
+			"children": [14]
+		},
+		{
+			"name": "Cable6",
+			"origin": [-3.5, 6.5, 0],
+			"color": 0,
+			"children": [15]
+		},
+		{
+			"name": "TopPanelDec",
+			"origin": [6.5, 12.5, 5.5],
+			"color": 0,
+			"children": [16]
+		},
+		{
+			"name": "BackPlate",
+			"origin": [7, 14, 6],
+			"color": 0,
+			"children": [17]
+		},
+		{
+			"name": "TopPanel",
+			"origin": [7, 14, 3],
+			"color": 0,
+			"children": [18]
+		},
+		{
+			"name": "TopPanelExtr",
+			"origin": [7, 14, 2],
+			"color": 0,
+			"children": [19]
+		},
+		{
+			"name": "ConnectorRight",
+			"origin": [-1.5, 10, -5],
+			"color": 0,
+			"children": [20]
+		},
+		{
+			"name": "ConnectorLeft",
+			"origin": [4.5, 10, -5],
+			"color": 0,
+			"children": [21]
+		},
+		{
+			"name": "ConnectorWireRight",
+			"origin": [-2.5, 13, -4],
+			"color": 0,
+			"children": [22]
+		},
+		{
+			"name": "ConnectorWireLeft",
+			"origin": [3.5, 13, -4],
+			"color": 0,
+			"children": [23]
+		},
+		{
+			"name": "ConnectorWireTop",
+			"origin": [2.5, 13, -4],
+			"color": 0,
+			"children": [24]
+		}
+	]
+}

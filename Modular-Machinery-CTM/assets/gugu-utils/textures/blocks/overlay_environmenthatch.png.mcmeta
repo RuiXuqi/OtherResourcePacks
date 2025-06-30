@@ -1,0 +1,9 @@
+{
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "textures":[
+            "gugu-utils:blocks/overlay_environmenthatch_ctm"
+        ]
+    }
+}

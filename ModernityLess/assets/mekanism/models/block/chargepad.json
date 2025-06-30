@@ -1,0 +1,107 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"all": "mekanism:blocks/models/chargepad",
+        "particle": "mekanism:blocks/steelcasing"
+	},
+	"elements": [
+		{
+			"name": "Shape1",
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [8, 4, 4, 4.25], "texture": "#all"},
+				"east": {"uv": [12, 4, 8, 4.25], "texture": "#all"},
+				"south": {"uv": [16, 4, 12, 4.25], "texture": "#all"},
+				"west": {"uv": [4, 4, 0, 4.25], "texture": "#all"},
+				"up": {"uv": [4, 4, 8, 0], "texture": "#all"},
+				"down": {"uv": [8, 0, 12, 4], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Shape2",
+			"from": [4, 1, 14],
+			"to": [12, 12, 16],
+			"faces": {
+				"north": {"uv": [2.5, 5, 0.5, 7.75], "texture": "#all"},
+				"east": {"uv": [3, 5, 2.5, 7.75], "texture": "#all"},
+				"south": {"uv": [5, 5, 3, 7.75], "texture": "#all"},
+				"west": {"uv": [0.5, 5, 0, 7.75], "texture": "#all"},
+				"up": {"uv": [0.5, 5, 2.5, 4.5], "texture": "#all"},
+				"down": {"uv": [2.5, 4.5, 4.5, 5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Shape3",
+			"from": [6, 7, 13],
+			"to": [10, 10, 14],
+			"faces": {
+				"north": {"uv": [1.25, 0.25, 0.25, 1], "texture": "#all"},
+				"east": {"uv": [1.5, 0.25, 1.25, 1], "texture": "#all"},
+				"south": {"uv": [2.5, 0.25, 1.5, 1], "texture": "#all"},
+				"west": {"uv": [0.25, 0.25, 0, 1], "texture": "#all"},
+				"up": {"uv": [0.25, 0.25, 1.25, 0], "texture": "#all"},
+				"down": {"uv": [1.25, 0, 2.25, 0.25], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Shape4",
+			"from": [11, 1, 13],
+			"to": [13, 6, 15],
+			"faces": {
+				"north": {"uv": [1.75, 2.5, 1.25, 3.75], "texture": "#all"},
+				"east": {"uv": [2.25, 2.5, 1.75, 3.75], "texture": "#all"},
+				"south": {"uv": [2.75, 2.5, 2.25, 3.75], "texture": "#all"},
+				"west": {"uv": [1.25, 2.5, 0.75, 3.75], "texture": "#all"},
+				"up": {"uv": [1.25, 2.5, 1.75, 2], "texture": "#all"},
+				"down": {"uv": [1.75, 2, 2.25, 2.5], "texture": "#all"}
+			}
+		},
+		{
+			"name": "Shape5",
+			"from": [3, 1, 13],
+			"to": [5, 6, 15],
+			"faces": {
+				"north": {"uv": [1.75, 2.5, 1.25, 3.75], "texture": "#all"},
+				"east": {"uv": [2.25, 2.5, 1.75, 3.75], "texture": "#all"},
+				"south": {"uv": [2.75, 2.5, 2.25, 3.75], "texture": "#all"},
+				"west": {"uv": [1.25, 2.5, 0.75, 3.75], "texture": "#all"},
+				"up": {"uv": [1.25, 2.5, 1.75, 2], "texture": "#all"},
+				"down": {"uv": [1.75, 2, 2.25, 2.5], "texture": "#all"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Shape1",
+			"origin": [8, 1, -8],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "Shape2",
+			"origin": [4, 12, 6],
+			"color": 0,
+			"children": [1]
+		},
+		{
+			"name": "Shape3",
+			"origin": [2, 10, 5],
+			"color": 0,
+			"children": [2]
+		},
+		{
+			"name": "Shape4",
+			"origin": [5, 6, 5],
+			"color": 0,
+			"children": [3]
+		},
+		{
+			"name": "Shape5",
+			"origin": [-3, 6, 5],
+			"color": 0,
+			"children": [4]
+		}
+	]
+}
