@@ -2,6 +2,7 @@
 	"ctm": {
 		"ctm_version": 1,
 		"type": "ctm",
+		"layer": "CUTOUT",
 		"textures": [ "modularmachinery:blocks/blockcasing_plain_ctm" ],
 		"extra": {
 			"connect_to": [
