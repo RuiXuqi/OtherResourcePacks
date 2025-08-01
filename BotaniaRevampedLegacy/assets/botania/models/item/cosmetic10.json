@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "botania:items/cosmetic10"
+	},
+	"display": {
+		"gui": {
+			"translation": [-2, -1, 0]
+		}
+	}
+}
